@@ -6,7 +6,9 @@ namespace Datos
 {
     public class ConexionBD
     {
-        public static string conexion = "datasource = localhost; port = 3306; username = root; password = 08001930WillyGod; persistsecurityinfo = True; SSL Mode = None"; //string para conectar
+        public static string conexion = "datasource = localhost; port = 3306; username = root; password = 08001930WillyGod; persistsecurityinfo = True; SSL Mode = None";
+        //"server = localhost; port = 3306; database = pollux; uid = *user* ; pwd =*passUser*"; string para conectar por si no funciona al anterior
+
         public static MySqlConnection miConexion = new MySqlConnection(conexion);
 
         public static bool ConexionEstable()
